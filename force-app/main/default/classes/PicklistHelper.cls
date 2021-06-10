@@ -1,7 +1,5 @@
 public with sharing class PicklistHelper {
-    public PicklistHelper() {
-
-    }
+    public PicklistHelper() {}
     @AuraEnabled(cacheable=true)
     public static Map<Id,String> getProfiles(){
         Map<Id,String> profileMap = new Map<Id,String>();
