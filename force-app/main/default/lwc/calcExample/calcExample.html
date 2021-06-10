@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Calculator">
+        <lightning-button 
+            label="Calculate" 
+            name="calculate" 
+            variant="brand"
+            slot="actions" 
+            onclick={handleAddition}>
+        </lightning-button>
+        <p class="slds-var-p-horizontal_x-small">
+            <lightning-input 
+                type="number" 
+                name="fNumber" 
+                label="fNumber" 
+                value={firstNumber} 
+                placeholder="First Number.." 
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input 
+                type="number" 
+                name="sNumber" 
+                label="sNumber" 
+                value={secondNumber} 
+                placeholder="Second Number.." 
+                onchange={handleChange}>
+            </lightning-input>
+        </p>
+        <p slot="footer">
+            Result : {result}
+        </p>
+    </lightning-card>
+    
+</template>
