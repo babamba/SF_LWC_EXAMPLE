@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title={recordsname} icon-name="utility:connected_apps">
+        <p class="slds-var-p-horizontal_small">
+            <template for:each={records.data} for:item="recordObj">
+                <ul key={recordObj.Id}>
+                    <li class="slds-box">
+                        {recordObj.Name}
+                    </li>
+                </ul>
+            </template>
+        </p>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title={title} icon-name="standard:connected_apps">
+        <p class="slds-var-p-horizontal_small">
+        <lightning-input
+            label="First number"
+            value={fnumber}
+            name="fstNumber"
+            type="number"
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-input
+            label="Second number"
+            value={snumber}
+            name="scdNumber"
+            type="number"
+            onchange={handleChange}
+        ></lightning-input>
+        <lightning-input
+            label="Result"
+            value={result}
+            name="result"
+        ></lightning-input>
+        </p>
+    </lightning-card>
+</template>
